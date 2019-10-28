@@ -8,9 +8,9 @@ namespace helloapi.Models {
       modelBuilder.Entity<Actor>()
         .HasOne<Movie>(a => a.Movie)
         .WithMany(m => m.actors)
-        .HasForeignKey(a => a.MovieId);
+        .HasForeignKey(a => a.movie_id);
     }
-    public DbSet<Todo> TodoItems { get; set; }
+    public DbSet<Todo> todos { get; set; }
     public DbSet<Movie> movies { get; set; }
     public DbSet<Actor> actors { get; set; }
   }
