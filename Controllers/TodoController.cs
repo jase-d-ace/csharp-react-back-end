@@ -36,7 +36,7 @@ namespace helloapi.Controllers {
     //GET /api/todo/{id}
     [HttpGet("{id}", Name="GetTodo")]
     public ActionResult<Todo> GetById(long id) {
-      var item = _context.TodoItems.Find(id);
+      var item = _context.todos.Find(id);
       if (item == null) {
         return NotFound();
       }
@@ -46,15 +46,15 @@ namespace helloapi.Controllers {
     //POST /api/todo
     [HttpPost]
     public async Task<ActionResult<Todo>> Post(Todo todo) {
-       _context.TodoItems.Add(todo);
+       _context.todos.Add(todo);
        await _context.SaveChangesAsync();
-       return CreatedAtAction(nameof(GetById), new { id = todo.Id }, todo);
+       return CreatedAtAction(nameof(GetById), new { id = todo.id }, todo);
     }
 
     //PUT /api/todo/{id}
     [HttpPut("{id}", Name="EditTodo")]
     public async Task<ActionResult<Todo>> Put(long id, [FromBody]Todo todo) {
-      var item = _context.TodoItems.Find(id);
+      var item = _context.todos.Find(id);
       item.text = todo.text;
       item.complete = todo.complete;
       await _context.SaveChangesAsync();
@@ -65,9 +65,9 @@ namespace helloapi.Controllers {
     [HttpDelete("{id}", Name="DeleteTodo")]
     public IActionResult Delete(long id) {
       //IActionResult allows for flexibility in return value
-      var item = _context.TodoItems.Find(id);
+      var item = _context.todos.Find(id);
       if (item != null) {
-        _context.TodoItems.Remove(item);
+        _context.todos.Remove(item);
         _context.SaveChanges();
         return Ok(item);
       }
