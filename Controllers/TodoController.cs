@@ -30,7 +30,7 @@ namespace helloapi.Controllers {
     //GET /api/todo
     [HttpGet]
     public ActionResult<List<Todo>> GetAll() {
-      return _context.TodoItems.ToList();
+      return _context.todos.ToList();
     }
 
     //GET /api/todo/{id}
