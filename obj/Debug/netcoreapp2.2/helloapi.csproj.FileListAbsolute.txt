@@ -1,0 +1,14 @@
+/Users/jasonandrada/Desktop/code/helloapi/bin/Debug/netcoreapp2.2/helloapi.deps.json
+/Users/jasonandrada/Desktop/code/helloapi/bin/Debug/netcoreapp2.2/helloapi.runtimeconfig.json
+/Users/jasonandrada/Desktop/code/helloapi/bin/Debug/netcoreapp2.2/helloapi.runtimeconfig.dev.json
+/Users/jasonandrada/Desktop/code/helloapi/bin/Debug/netcoreapp2.2/helloapi.dll
+/Users/jasonandrada/Desktop/code/helloapi/bin/Debug/netcoreapp2.2/helloapi.pdb
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.csprojAssemblyReference.cache
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.csproj.CoreCompileInputs.cache
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.RazorAssemblyInfo.cache
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.RazorAssemblyInfo.cs
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.AssemblyInfoInputs.cache
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.AssemblyInfo.cs
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.RazorTargetAssemblyInfo.cache
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.dll
+/Users/jasonandrada/Desktop/code/helloapi/obj/Debug/netcoreapp2.2/helloapi.pdb
