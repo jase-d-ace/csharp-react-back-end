@@ -52,8 +52,8 @@ namespace helloapi.Controllers {
     public List<ActorDto> GetActorsByMovie(int id) {
       var actorList = (from a in _context.actors
           join m in _context.movies
-          on a.MovieId equals m.id
-          where a.MovieId == id
+          on a.movie_id equals m.id
+          where a.movie_id == id
           select new ActorDto { id = a.id, name = a.name, title = m.title })
           .ToList();
       if (actorList != null) {
